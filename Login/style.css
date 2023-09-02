@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Sedgwick+Ave+Display&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Poppins , sans-serif;
+    /* background-color:aquamarine; */
+}
+main{
+    width: 100vw;
+    height: auto;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.container .left{
+    position: relative;
+    flex: 1 1 40%;
+    width: 30%;
+    height: 100vh;
+}
+.container .left > img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+}
+.container .left .logo{
+    position: relative;
+    top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: .5em 0;
+}
+.container .left .logo img{
+    width: 6em;
+}
+.container .left .logo h1{
+    color: white;
+    font-size: 5em;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    align-self: last baseline;
+}
+.container .right{
+    flex: 1 1 60%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    padding: 8em 0 0;
+    background-color: rgb(240, 240, 240);
+  
+}
+
+img{
+    width: 100%;
+}
+
+.container .right .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-right: 12em;
+    padding-left: 2.5em;
+}
+.container .right h3{
+    font-weight: 700;
+}
+.container .right .form{
+    /* padding: ; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+}
+
+.form .content{
+    padding: 1.5em 20em 1.5em 2.5em;
+
+}
+.form .content-box{
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5em;
+    row-gap: 1.5em;
+    color: rgb(59, 59, 59);
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.form form .box{
+    display: flex;
+    gap: .2em;
+    flex-direction: column;
+    width: 35%;
+    flex: 0 1 auto;
+    position: relative;
+}
+.form form .box{
+    text-transform: uppercase;
+}
+form h2{
+    margin-bottom: 1.5rem;
+}
+form .msgError{
+    color: red;
+    font-size: .6em;
+    text-transform: lowercase;
+    position: absolute;
+    bottom: -1.7em;
+    display: none;
+}
+
+form .box input{
+    border-radius: .2em;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    /* border: 2px solid blue; */
+    line-height: 2em;
+    padding-left: .5em;
+}
+
+input:focus {
+    outline: 2px solid blue;
+    box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.432);
+
+}  
+.input:invalid{
+    outline: 2px solid red;
+
+}
+form .footer{
+    --green-dark : rgb(27, 77, 1);
+    padding: 1.5em 25em 1.5em 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    background-color: rgb(240, 240, 240);
+
+}
+form .footer button{
+    font-size: 1em;
+    background-color:var(--green-dark);
+    border: none;
+    /* width: 15px; */
+    flex: 1 1 0;
+    padding: .7em 3rem;
+    border-radius: .5em;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    
+}
+form .footer a, a:visited{
+    color: var(rgb(27, 77, 1));
+    text-decoration: none;
+    font-weight: 700;
+}
+a:visited{
+    color: inherit;
+}
+form .footer p{
+    font-weight: 500;
+}

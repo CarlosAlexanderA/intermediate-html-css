@@ -9,6 +9,15 @@ body{
     /* height: 100vh; */
     background-color:aquamarine;
 }
+.container{
+    display: flex;
+    margin: 0 auto ;
+    width: 1000px;
+    position: relative;
+    top: 150px;
+    gap: 10px;
+    flex-direction: column;
+}
 
 .content{
     margin: 100px 50px;
@@ -72,4 +81,48 @@ img{
     bottom: -.8em;
     transform: rotate(45deg);
 
+
+
+}
+
+
+.search-bar{
+    position: relative;
+    top: 5rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    /* background-color: red; */
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 3px 3px 20px -.6em black;
+}
+
+.search-bar .icon{
+    width: 1.8em;
+    flex: 1 2 0;
+    height: 100%;
+}
+
+.search-bar #bar{
+    width: 100%;
+    flex: 2 1 100%;
+    font-size: 1.3em;
+    padding: .3em;
+    border: none;
+}
+
+#bar:focus-visible{
+    outline: none;
+}
+
+.search-bar .icon:hover{
+    filter: invert(50%) hue-rotate(10deg)
 }
