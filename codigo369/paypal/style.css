@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    /* width: 100vw; */
+}
+
+body{
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #08559c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: .8em;
+    width: 32rem;
+    box-shadow: 5px 5px 20px -20px black;
+
+}
+.card .logo{
+    width: 2.5rem;
+}
+.card .box{
+    display: flex;
+    gap: 1em;
+    flex: 1 1 1;
+}
+
+img{
+    width: 100%;
+}
+
+.card .box-1{
+    width: 100%;
+    /* background-color: aqua; */
+}
+.box-1 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card .box-2{
+    /* background-color: blueviolet; */
+    width: 100%;
+    justify-content: flex-end;
+}
+.box-2 button{
+    padding: .6em 1em;
+    border-radius: .3em;
+    border: none;
+    font-weight: 500;
+}
+
+.box-2 button:first-child{
+    color: white;
+    background-color: #009ce1;
+}
+.box-2 button:nth-child(2){
+    background: white;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+@media (max-width: 438px) {
+    body{
+        background: #000;
+    }
+    .box-2 button{
+        flex: 1 1 auto;
+    }
+}

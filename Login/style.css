@@ -166,7 +166,7 @@ form .footer a, a:visited{
     font-weight: 700;
 }
 a:visited{
-    color: inherit;
+    color: var(--green-dark);
 }
 form .footer p{
     font-weight: 500;
