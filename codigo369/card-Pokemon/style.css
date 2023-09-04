@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgba(245, 134, 7, 0.699); */
+    background-image: radial-gradient(circle at 5px 2px, red 1px, #ff0 0px);
+    background-size: 100%;
+}
+.card{
+    display: none !important;
+    background-color: orange;
+    width: 400px;
+    height: 600px;
+    border-radius: 1em;
+    box-shadow: 0 0 15px -5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    background-image: url(https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGdhbGF4eSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: contain;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    gap: 1em;
+}
+img{
+    width: 100%;
+}
+.content .circle{
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid rgb(255, 94, 0);
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+}
+.circle img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.content h1{
+    position: relative;
+    top: -25px;
+}
+
+.content h1 span {
+    color: orange;
+}
+.content .bottom{
+    width: 100%;
+    display: flex;
+    border-top: 1px solid rgb(255, 94, 0);
+    padding: 1.5em 0;
+}
+.bottom .box{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.bottom .box img{
+    width: 35%;
+}
