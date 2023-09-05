@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100%;
+    grid-template-areas: 
+        "aside header"
+        "aside main" 
+    ;
+    /* overflow: auto; */
+}
+
+.header{
+    grid-area: header;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(173, 173, 173);
+
+}
+.header .box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em 3em;
+    /* background-color: violet; */
+    column-gap: 5em;
+    margin: 0 1em;
+}
+.header .box .item{
+    /* background-color: violet; */
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+.header .box .profile{
+    justify-content: space-evenly;
+}
+
+.icon i{
+    font-size: 1.2em;
+}
+.header .search .bar{
+    flex: 1 1 100%;
+}
+.user-img{
+    width: 3em;
+    height: 3em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.user-img img{
+    object-fit: cover;
+}
+input{
+    width: 90%;
+    border-radius: 50px;
+    border: none;
+    padding: .5em 1em;
+    background-color:rgb(226 232 240);
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.header .box .welcome{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.header .welcome .user-img{
+    width: 4em;
+    height: 4em;
+}
+.header .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.btnSimple{
+    color: white;
+    background-color: rgb(19, 126, 214);
+    border-radius: 50px;
+    padding: .7em 2em;
+    font-weight: 500;
+}
+.btnSimple:hover{
+    background-color: rgb(33, 160, 219);
+}
+.aside{
+    grid-area: aside;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 4.5em;
+    padding: 1.5em;
+    color: white;
+    background-color: rgb(19, 126, 214);
+}
+.aside .logo i {
+    font-size: 1.2em;
+}
+
+ul{
+    list-style: none;
+}
+.aside ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+.aside .link a{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.main{
+    grid-area: main;
+    background-color: yellow;
+    display: flex;
+    gap: 2em;
+}
+.main .content{
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.main ,.content .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 50%));
+    width: 100%;
+}
+.main .side{
+    width: 30%;
+    background-color: white;
+}

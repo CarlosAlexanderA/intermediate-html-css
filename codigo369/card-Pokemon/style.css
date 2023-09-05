@@ -14,8 +14,8 @@ body{
     align-items: center;
     height: 100vh;
     /* background-color: rgba(245, 134, 7, 0.699); */
-    background-image: radial-gradient(circle at 5px 2px, red 1px, #ff0 0px);
-    background-size: 100%;
+    background-image: radial-gradient(circle at center, #c39f76 0% 80%,#0000 81% 100%);
+    background-size: 100vw 100vh;  
 }
 .card{
     display: none !important;
