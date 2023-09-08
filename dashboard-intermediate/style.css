@@ -59,9 +59,7 @@ body{
     overflow: hidden;
     border-radius: 50%;
 }
-.user-img img{
-    object-fit: cover;
-}
+
 input{
     width: 90%;
     border-radius: 50px;
@@ -73,6 +71,8 @@ input{
 img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+
 }
 .header .box .welcome{
     display: flex;
@@ -133,26 +133,112 @@ ul{
     align-items: center;
     font-size: 1.2em;
 }
+.aside .link a > i{
+    margin-right: 1em;
+}
 
-.main{
+main.main{
     grid-area: main;
     background-color: yellow;
     display: flex;
     gap: 2em;
+    flex-direction: row;
+    justify-content: center;
+    background-color:rgb(226 232 240);
+
 }
 .main .content{
-    width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 3 1 0;
+    margin: 1em;
+}
+.main .content .cards{
+    display: grid;
+    grid-template-columns:   repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1em;
+
+}
+.main .content .cards > .card{
     background-color: white;
+    border-left: .4em solid rgb(252, 190, 58);
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em 1em;
+    justify-content: space-between;
+}
+.cards > .card >.text > p{
+    color: rgb(80, 80, 80);
+    margin-top: .5em;
+}
+.card .options{
+    align-self: flex-end;
+    display: flex;
+    gap: 1em;
+}
+.main .side{
+    width: 100%;
+    background-color:rgb(226 232 240);
+    flex: 1 1 0;
+}
+
+.side .box{
+    margin: 1em 2em 1em 0;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.main ,.content .cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 50%));
+.side .box .cards{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: .5em;
+    padding: 1.2em 1.5em; 
+    gap: 1em;
+}
+.side .box .cards > .card{
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(126, 126, 126, 0.384);
+}
+.side .box .cards > .card:last-child{
+    border: none;
+    padding-bottom: 0;
+}
+.side .box .cards >.card > .text >p{
+    margin-top: .3em;
+    font-size: .9em;
+}
+.side .cards-trending{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: .5em;
+    padding: 1.2em 1.5em;
+    gap: 1em;
+
+}
+.side .cards-trending > .card{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1em;
+    align-items: center;
     width: 100%;
 }
-.main .side{
-    width: 30%;
-    background-color: white;
+.side .cards-trending > .card > .image{
+    width: 3em;
+    height: 3em;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
+.side .cards-trending > .card > .text>p{
+    margin-top: .2em;
+    text-transform: capitalize;
+    color: rgb(80, 80, 80);
+
+}
+
